@@ -21,7 +21,7 @@ public class TaskB {
         // Wyliczenie |L-R|, ustawienie initial beauty
         int max = Math.abs(L-R);
         
-        // Wyszukiwanie najlepszej konfiguracji kolumn, dla ustawienia max beauty > initial beauty
+        // Wyszukiwanie najlepszej konfiguracji kolumn, dla ustawienia max beauty > initial beauty 
         for (int i = 0; i < n; i++) {
             int cur = Math.abs((L-arr[i]+sarr[i]) - (R-sarr[i]+arr[i]));
             if (cur > max) {
